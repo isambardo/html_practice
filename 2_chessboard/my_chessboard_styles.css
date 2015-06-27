@@ -18,3 +18,34 @@ Note that I've included the background image for the page in this folder, "grey.
 Write your CSS rules below.
 
 */
+
+body{
+  background-image: url('grey.png');
+}
+
+.board {
+  border: thick solid #008a7f;/*I approximated the color in thr gradient coding tool, then copied it from there, rather than lifting it from the solution — that's whay the match is slightly off */
+  margin: 36px auto;
+}
+
+.square {
+  color: orange;/*again the color match is approximated*/
+  font-size: 48px;
+  height: 72px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  width: 72px;
+}
+
+.dark_square{
+  background: #b5ddda; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #b5ddda 0%, #83c7c1 0%, #83c7c1 4%, #52b2aa 15%, #52b2aa 15%, #008a7f 55%, #008a7f 100%, #005851 100%, #005851 100%, #002421 100%, #005851 101%, #008a7f 101%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#b5ddda), color-stop(0%,#83c7c1), color-stop(4%,#83c7c1), color-stop(15%,#52b2aa), color-stop(15%,#52b2aa), color-stop(55%,#008a7f), color-stop(100%,#008a7f), color-stop(100%,#005851), color-stop(100%,#005851), color-stop(100%,#002421), color-stop(101%,#005851), color-stop(101%,#008a7f)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #b5ddda 0%,#83c7c1 0%,#83c7c1 4%,#52b2aa 15%,#52b2aa 15%,#008a7f 55%,#008a7f 100%,#005851 100%,#005851 100%,#002421 100%,#005851 101%,#008a7f 101%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #b5ddda 0%,#83c7c1 0%,#83c7c1 4%,#52b2aa 15%,#52b2aa 15%,#008a7f 55%,#008a7f 100%,#005851 100%,#005851 100%,#002421 100%,#005851 101%,#008a7f 101%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #b5ddda 0%,#83c7c1 0%,#83c7c1 4%,#52b2aa 15%,#52b2aa 15%,#008a7f 55%,#008a7f 100%,#005851 100%,#005851 100%,#002421 100%,#005851 101%,#008a7f 101%); /* IE10+ */
+  background: linear-gradient(135deg, #b5ddda 0%,#83c7c1 0%,#83c7c1 4%,#52b2aa 15%,#52b2aa 15%,#008a7f 55%,#008a7f 100%,#005851 100%,#005851 100%,#002421 100%,#005851 101%,#008a7f 101%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5ddda', endColorstr='#008a7f',GradientType=1 );
+}
+
+
